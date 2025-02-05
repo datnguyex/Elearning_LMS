@@ -1,0 +1,60 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* o day dung de dinh nghia fontsize mac dinh fontfamilymacdinh cho the... 
+khac voi tailwindconfig// cai nay no dinh nghia san ma khong can goi lai
+*/
+
+/* va khai bao 1 so phuong thuc ma tailwind khong ho tro, chung ta tu add vao */
+
+@layer base {
+}
+@layer utilities {
+    /* variants cho phep dung responsiv cho may cai nay */
+    .text-underline-offset-4 {
+        text-underline-offset: 4px;
+    }
+    .text-underline-offset-3 {
+        text-underline-offset: 3px;
+    }
+    .fiter-header {
+        filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.3137254902));
+    }
+    .filter-home-title {
+        filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.1254901961));
+    }
+    .fiter-footer {
+        box-shadow: 0px -6px 10px 0px #0093831a;
+    }
+    .text-shadown-banner2 {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .shadown-home-bottle {
+        box-shadow: 5px 5px 21px 0 rgba(0, 147, 131, 0.3);
+    }
+    .filter-rank-home {
+        filter: drop-shadow(2px 2px 10px rgba(0, 111, 98, 0.13));
+    }
+    .showdown-instruct-station {
+        box-shadow: 0 0 16px 0 rgba(8, 15, 52, 0.08);
+    }
+    .showdown-map {
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+    }
+    .showdown-location-map {
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    }
+    .shadown-header-language {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    }
+    .shadown-header-language-child {
+        box-shadow:
+            0 6px 16px 0 rgba(0, 0, 0, 0.08),
+            0 3px 6px -4px rgba(0, 0, 0, 0.12),
+            0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    }
+}
