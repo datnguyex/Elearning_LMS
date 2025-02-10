@@ -12,3 +12,89 @@ body {
     font-size: 1.6rem;
     text-rendering: optimizeSpeed;
 }
+//font Mulish
+@font-face {
+    font-family: 'Mulish';
+    src:
+        url('../../assets/Fonts/Mullish/Mulish-Black.ttf') format('truetype'),
+        url('../../assets/Fonts/Mullish/Mulish-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:
+        url('../../assets/Fonts/Mullish/Mulish-Bold.ttf') format('truetype'),
+        url('../../assets/Fonts/Mullish/Mulish-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:
+        url('../../assets/Fonts/Mullish/Mulish-ExtraBold.ttf') format('truetype'),
+        url('../../assets/Fonts/Mullish/Mulish-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('../../assets/Fonts/Mullish/Mulish-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:
+        url('../../assets/Fonts/Mullish/Mulish-SemiBold.ttf') format('truetype'),
+        url('../../assets/Fonts/Mullish/Mulish-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+/* Font Source Sans Pro */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src:
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-Black.ttf') format('truetype'),
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src:
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-Bold.ttf') format('truetype'),
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src:
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-ExtraLight.ttf') format('truetype'),
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../assets/Fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src:
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-Semibold.ttf') format('truetype'),
+        url('../../assets/Fonts/SourceSansPro/SourceSansPro-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

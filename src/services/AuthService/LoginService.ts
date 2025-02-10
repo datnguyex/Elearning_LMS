@@ -13,7 +13,7 @@ export const LoginService = async ({ username, creditentialValue, navigate }: lo
             Object.values(users).forEach((user) => {
                 const typedUser = user as LoginUserServiceProps;
 
-                if (typedUser.username === username && typedUser.password === creditentialValue) {
+                if (typedUser.username == username && typedUser.password == creditentialValue) {
                     isMatch = true;
                 }
             });

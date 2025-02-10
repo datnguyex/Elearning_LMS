@@ -1,0 +1,12 @@
+import Sidebar from '~/layouts/Sidebar/Sidebar';
+
+function ScoreInput() {
+    return (
+        <>
+            <Sidebar />
+            <h1>Nhập điểm bàn kiểm tra</h1>
+        </>
+    );
+}
+
+export default ScoreInput;
