@@ -31,7 +31,6 @@ function Sidebar() {
     const handleSidebarToggle = (e: boolean) => {
         setIsSidebarOpen(e);
     };
-    console.log('isSidebarOpen', isSidebarOpen);
 
     //state selected
     const [selectedItem, setSelectedItem] = useState<number>(1);
@@ -44,7 +43,7 @@ function Sidebar() {
         <>
             {/* h-1080 w-1920 */}
             {/* //w-76px h-1080*/}
-            <div className="relative h-[100vh] shadow-Sidebar bg-gradient-to-t from-[#ff5400] to-[#f17f21] w-[6%] overflow-hidden rounded-2xl flex flex-col items-center justify-center z-[10]">
+            <div className="fixed h-[100vh] shadow-Sidebar bg-gradient-to-t from-[#ff5400] to-[#f17f21] w-[6%] overflow-hidden rounded-2xl flex flex-col items-center justify-center z-[12]">
                 <div className="w-[100%] h-full flex flex-col items-center">
                     <div className="w-[65%] h-auto my-[5vh]">
                         <img className="w-full h-full" src={ElearningLogoWhite} alt="Logo" />
@@ -102,13 +101,14 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
+            {/* //sidebar child */}
             <motion.div
                 onMouseEnter={() => setIsSidebarOpen(true)}
                 onMouseLeave={() => setIsSidebarOpen(false)}
                 initial={{ x: '-100%' }}
                 animate={{ x: isSidebarOpen ? '0%' : '-150%' }}
                 transition={{ type: 'spring', stiffness: 50 }}
-                className="absolute h-[100vh] w-[15%] shadow-ChildrentSidebar left-[6%] top-0 overflow-hidden z-[5]"
+                className="absolute bg-[#fff] h-[100vh] w-[15%] shadow-ChildrentSidebar left-[6%] top-0 overflow-hidden z-[11]"
             >
                 <div className="mt-[18vh] translate-x-[12%] inline-block">
                     <SidebarSection
