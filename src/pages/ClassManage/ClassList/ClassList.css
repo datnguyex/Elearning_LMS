@@ -1,0 +1,59 @@
+.classlist-pagination .ant-select-selector {
+    display: none;
+}
+.classlist-pagination .ant-pagination-options {
+    display: none;
+}
+.classlist-pagination .ant-pagination-item {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+.classlist-pagination .ant-pagination-item a {
+    padding: 0;
+    color: #373839;
+}
+.classlist-pagination .ant-pagination-item {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+.classlist-pagination .ant-pagination-item:hover {
+    background-color: transparent !important;
+}
+
+.classlist-pagination .ant-pagination-item-active {
+    border-radius: 50%;
+    background-color: #ff7506;
+    border-color: #ff7506;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    min-width: 20px !important;
+}
+.classlist-pagination .ant-pagination-item-active:hover {
+    background-color: #ff7506 !important;
+    border-color: #ff7506 !important;
+}
+.classlist-pagination .ant-pagination-item-active:hover a {
+    color: white !important;
+}
+.classlist-pagination .ant-pagination-item-active a {
+    color: #fff !important;
+}
+.classlist-pagination .ant-pagination-prev {
+    margin: 0;
+    min-width: 20px !important;
+}
+.classlist-pagination .ant-pagination-next {
+    margin: 0;
+    min-width: 20px !important;
+}

@@ -1,11 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ArrowWhite, ICircle } from '~/assets/Icons/Icons';
 import CourseOverview from '~/components/Overview/CourseOverview';
 import Sidebar from '~/layouts/Sidebar/Sidebar';
-import { getDatabase, ref, get } from 'firebase/database';
-import { app, Databasez } from '~/firebase';
-
-import { motion } from 'framer-motion';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement, ChartData } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
@@ -33,7 +28,7 @@ function Overview() {
 
     // display courses function
     const handleDisplayCourse = (courseId: number) => {
-        UseToggleArray({ courseId, setActiveCourses });
+        UseToggleArray({ id: courseId, setState: setActiveCourses });
     };
 
     //data pie chart
@@ -95,7 +90,7 @@ function Overview() {
             <div className="flex justify-start w-[100vw] h-[100vh]  max-h-[100vh] relative overflow-hidden">
                 <Sidebar />
 
-                <div className="w-full ml-[6%] flex mt-[6vh] ">
+                <div className="w-full ml-[6%] flex mt-[6vh]">
                     {/* //position backgroun icon */}
                     <PositionBackgroundIcons />
 

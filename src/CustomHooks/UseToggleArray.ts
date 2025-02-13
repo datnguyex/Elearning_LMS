@@ -1,12 +1,11 @@
-import React from 'react';
 import { UseToggleArrayProps } from '~/types/UseToggleArrayProps/UseToggleArrayProps';
 
-const UseToggleArray = ({ courseId, setActiveCourses }: UseToggleArrayProps): void => {
-    setActiveCourses((prev) => {
-        if (prev.includes(courseId)) {
-            return prev.filter((id) => id !== courseId);
+const UseToggleArray = ({ id, setState }: UseToggleArrayProps): void => {
+    setState((prev) => {
+        if (prev.includes(id)) {
+            return prev.filter((item) => item !== id);
         } else {
-            return [...prev, courseId];
+            return [...prev, id];
         }
     });
 };
