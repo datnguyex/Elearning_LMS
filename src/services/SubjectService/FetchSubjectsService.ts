@@ -1,4 +1,3 @@
-// services/FetchSubjectsService.ts
 import { ref, get } from 'firebase/database';
 import { Databasez } from './../../firebase';
 import FetchSubjectsServiceProps from '~/types/FetchSubjectServiceProps/FetchSubjectServiceProps';
