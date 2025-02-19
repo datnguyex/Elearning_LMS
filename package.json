@@ -52,7 +52,7 @@
         "dev:css": "NODE_ENV=development postcss tailwind.css -o /src/tailwind.css -w",
         "start": "react-app-rewired start",
         "build": "CI=false react-app-rewired build",
-        "test": "react-app-rewired test",
+        "test": "react-app-rewired test --passWithNoTests",
         "eject": "react-app-rewired eject"
     },
     "eslintConfig": {
