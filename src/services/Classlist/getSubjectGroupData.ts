@@ -52,7 +52,7 @@ const GetSubjectGroupData: React.FC<GetSubjectGroupDataProps> = ({
         };
 
         fetchData();
-    }, []);
+    }, [setClasses, setArrGroupSubject, setGroupSubject, setSubject, setArrSubject]);
 
     return null;
 };
