@@ -77,7 +77,7 @@ function AuthLayout({ title, transfer, type }: AuthLayoutProps) {
                         )}
                     </div>
                     <Link
-                        to={type === 'login' ? '/reset-password' : '/login'}
+                        to={type === 'login' ? '/reset-password' : '/'}
                         className="text-end cursor-pointer mt-[10px]  text-[#ff7506] text-base font-normal font-['Source Sans Pro'] leading-tight"
                     >
                         {transfer}
