@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { DoubleArrow, ICircle } from '~/assets/Icons/Icons';
 import { ClassesProps } from '~/types/ClassList/ClassesProp';
 
@@ -77,9 +78,9 @@ const Classes: React.FC<ClassesProps> = ({ classes, subject, typeClass, ElementQ
                             </div>
                         </div>
 
-                        <div className="flex-1 h-full flex items-center justify-center">
+                        <Link to={'/class-manage'} className="flex-1 h-full flex items-center justify-center">
                             <ICircle />
-                        </div>
+                        </Link>
                     </div>
                 );
             })}

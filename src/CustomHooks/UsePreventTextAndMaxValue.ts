@@ -1,5 +1,4 @@
 import { UsePreventTextAndMaxValueProps } from './../types/UsePreventTextAndMaxValueProps';
-import React from 'react';
 
 const UsePreventTextAndMaxValue = ({
     maxValue,

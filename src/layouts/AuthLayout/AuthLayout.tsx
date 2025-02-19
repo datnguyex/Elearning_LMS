@@ -3,11 +3,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ElearningLogo, UserCircle, backgroundAuth, shield } from '~/assets/images';
 import AuthInput from '~/components/Auth/AuthInput';
 import { AuthLayoutProps } from '~/types/AuthLayoutProps/AuthLayoutProps';
-import { getDatabase, ref, get, child } from 'firebase/database';
-import { Databasez } from '~/firebase';
+
 import { LoginService } from '~/services/AuthService/LoginService';
 
-function AuthLayout({ title, credential, transfer, type }: AuthLayoutProps) {
+function AuthLayout({ title, transfer, type }: AuthLayoutProps) {
     //navigate
     const navigate = useNavigate();
 

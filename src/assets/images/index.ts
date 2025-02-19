@@ -5,3 +5,4 @@ export const UserCircle = 'https://res.cloudinary.com/doav62tr3/image/upload/v17
 export const shield = 'https://res.cloudinary.com/doav62tr3/image/upload/v1738746657/Group_yrhfnc.png';
 export const ElearningLogoWhite =
     'https://res.cloudinary.com/doav62tr3/image/upload/v1738827352/ac26nl64hiavyhoff4ud.png';
+export const TeacherImg = 'https://res.cloudinary.com/doav62tr3/image/upload/v1739768610/teacherImg_x3o7zs.png';

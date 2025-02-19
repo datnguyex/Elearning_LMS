@@ -11,6 +11,7 @@ import SubjectCard from '~/components/Overview/SubjectCard';
 import UseToggleArray from '~/CustomHooks/UseToggleArray';
 import { CreateGradientColor } from '~/utils/CreateGradientColor';
 import FetchSubjects from '~/services/SubjectService/FetchSubjectsService';
+import TitlePage from '~/layouts/Tilte/Title';
 
 ChartJS.register(Title, Tooltip, Legend, ArcElement, ChartDataLabels);
 
@@ -98,7 +99,7 @@ function Overview() {
                     <PositionUserInfo />
                     {/* //item-left */}
                     <div className="flex flex-col h-full w-[40%] pl-[20px]">
-                        <div className="text-[#373839] text-5xl font-bold font-Mulish tracking-wide">Tổng quan</div>
+                        <TitlePage>Tổng quan</TitlePage>
                         {/* w-[1207px]  h-1080*/}
                         <div className="w-full h-full mt-6">
                             {/* courses */}

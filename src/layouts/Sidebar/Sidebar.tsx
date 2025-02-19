@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import { motion } from 'framer-motion';
 import {
     BellGrey,
@@ -33,12 +33,12 @@ function Sidebar() {
     };
 
     //state selected
-    const [selectedItem, setSelectedItem] = useState<number>(1);
+    // const [selectedItem, setSelectedItem] = useState<number>(1);
 
     //select sidebar item
-    const handleSelected = (id: number) => {
-        setSelectedItem(id);
-    };
+    // const handleSelected = (id: number) => {
+    //     setSelectedItem(id);
+    // };
     return (
         <>
             {/* h-1080 w-1920 */}

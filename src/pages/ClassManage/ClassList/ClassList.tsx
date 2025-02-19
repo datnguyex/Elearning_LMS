@@ -16,6 +16,7 @@ import DropdownSelector from '~/components/ClassList/DropdownSelector';
 import GetSubjectGroupData from '~/services/Classlist/getSubjectGroupData';
 import SetSubjectData from '~/services/Classlist/SetSubjectData';
 import SetGroupSubjectData from '~/services/Classlist/SetGroupSubjectData';
+import TitlePage from '~/layouts/Tilte/Title';
 function ClassList() {
     //quantity elements on table state
     const [ElementQuantity, setElementQuantity] = useState(6);
@@ -101,7 +102,7 @@ function ClassList() {
     //reset current page
     useEffect(() => {
         setCurrentPage(1);
-    }, [ElementQuantity]);
+    }, [ElementQuantity, subject, groupSubject]);
 
     return (
         <>
@@ -115,9 +116,7 @@ function ClassList() {
                     <PositionUserInfo />
                     <div className="flex flex-col h-full pl-[20px] w-full   ">
                         {/* //title */}
-                        <div className="text-[#373839] text-5xl font-bold font-Mulish tracking-wide">
-                            Quản lý lớp học
-                        </div>
+                        <TitlePage> Quản lý lớp học</TitlePage>
                         <div className="flex items-center gap-3 w-full h-[8%]  mt-6 ml-[0px]">
                             <ButtonTypeClass
                                 value={1}
