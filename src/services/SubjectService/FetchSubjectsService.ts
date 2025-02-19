@@ -1,6 +1,6 @@
 // services/FetchSubjectsService.ts
 import { getDatabase, ref, get } from 'firebase/database';
-import { app } from '~/firebase';
+import { app } from './../../firebase';
 import FetchSubjectsServiceProps from '~/types/FetchSubjectServiceProps/FetchSubjectServiceProps';
 
 const FetchSubjects = ({ setSubjects }: FetchSubjectsServiceProps) => {
