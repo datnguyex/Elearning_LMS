@@ -1,5 +1,5 @@
 import Lesson from '~/types/ClassInmation/Lesson';
-import { Databasez } from './../../firebase';
+import Databasez from '../../firebase';
 import { ref, get } from 'firebase/database';
 
 interface Props {

@@ -6,11 +6,10 @@ import Sidebar from '~/layouts/Sidebar/Sidebar';
 import { Pagination } from 'antd';
 import './ClassList.css';
 import UseToggleArray from '~/CustomHooks/UseToggleArray';
-import { motion } from 'framer-motion';
+
 import UsePreventTextAndMaxValue from '~/CustomHooks/UsePreventTextAndMaxValue';
 import ButtonTypeClass from '~/components/ClassList/ButtonTypeClass';
-import { ref, get, set } from 'firebase/database';
-import { Databasez } from '~/firebase';
+
 import Classes from '~/components/ClassList/Classes';
 import DropdownSelector from '~/components/ClassList/DropdownSelector';
 import GetSubjectGroupData from '~/services/Classlist/getSubjectGroupData';

@@ -1,5 +1,5 @@
 import { ref, get } from 'firebase/database';
-import { Databasez } from '../../firebase';
+import Databasez from '../../firebase';
 // hoặc các dịch vụ Firebase bạn sử dụng
 
 import FetchSubjectsServiceProps from '~/types/FetchSubjectServiceProps/FetchSubjectServiceProps';

@@ -1,4 +1,4 @@
-import { Databasez } from './../../firebase';
+import Databasez from './../../firebase';
 import React, { useEffect } from 'react';
 import { ref, get } from 'firebase/database';
 

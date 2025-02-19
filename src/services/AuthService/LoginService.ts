@@ -1,6 +1,6 @@
 import { loginServiceProps, LoginUserServiceProps } from './../../types/LoginServiceProps/LoginServiceProps';
 import { getDatabase, ref, get, child } from 'firebase/database';
-import { Databasez } from '~/firebase';
+import Databasez from '~/firebase';
 export const LoginService = async ({ username, creditentialValue, navigate }: loginServiceProps) => {
     const dbRef = ref(Databasez);
 
