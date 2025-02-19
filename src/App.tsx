@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import Overview from './pages/Overview/Overview';
@@ -11,7 +10,9 @@ import ExamSchedule from './pages/ExamSchedule/ExamSchedule';
 import ScoreInput from './pages/ExamManagement/ScoreInput/ScoreInput';
 import ClassList from './pages/ClassManage/ClassList/ClassList';
 import AddClassSchedule from './pages/ClassManage/AddClassSchedule/AddClassSchedule';
-import JoinClassSchedule from './pages/ClassManage/JoinClassSchedule/JoinClassSchedule';
+
+import ClassMange from './pages/ClassManage/ClassManage/ClassManage';
+
 export default function App() {
     return (
         <Router>
@@ -21,13 +22,13 @@ export default function App() {
                 <Route path="/overview" element={<Overview />} />
                 <Route path="/class-list" element={<ClassList />} />
                 <Route path="/add-class-schedule" element={<AddClassSchedule />} />
-                <Route path="/join-class-schedule" element={<JoinClassSchedule />} />
                 <Route path="/exam-list" element={<ExamList />} />
                 <Route path="/grade-table" element={<GradeTable />} />
                 <Route path="/score-input" element={<ScoreInput />} />
                 <Route path="/exam-schedule" element={<ExamSchedule />} />
                 <Route path="/notifications" element={<Notifications />} />
                 <Route path="/help" element={<Help />} />
+                <Route path="/class-manage" element={<ClassMange />} />
             </Routes>
         </Router>
     );

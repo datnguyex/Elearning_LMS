@@ -1,0 +1,15 @@
+.checkbox-addClassSchedule .ant-checkbox-inner {
+    border-width: 1.5px !important;
+    border-style: solid !important;
+    border-color: #0b80ec !important;
+    width: 14px;
+    height: 14px;
+}
+
+.datePicker-joinClassSchedule .ant-picker {
+    border-radius: 3px !important;
+    font-size: 10px !important;
+}
+.datePicker-joinClassSchedule .ant-picker .ant-picker-input input {
+    font-size: 11px !important;
+}

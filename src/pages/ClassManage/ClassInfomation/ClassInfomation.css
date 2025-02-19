@@ -1,0 +1,17 @@
+.datePicker-addClassSchedule .ant-picker {
+    border-radius: 3px !important;
+    font-size: 10px !important;
+}
+.datePicker-addClassSchedule .ant-picker .ant-picker-input input {
+    font-size: 11px !important;
+}
+.slider-joinClassSchedule .slick-slider {
+    width: 100% !important;
+}
+.slider-joinClassSchedule .slick-active {
+    /* margin-right: 10px !important; */
+}
+
+/* .slider-joinClassSchedule .slick-list {
+    width: 100px !important;
+} */

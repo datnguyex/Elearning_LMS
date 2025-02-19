@@ -1,5 +1,5 @@
 import { ref, get } from 'firebase/database';
-import { Databasez } from '~/firebase';
+import Databasez from '~/firebase';
 
 interface Subject {
     name: string;

@@ -1,6 +1,6 @@
 import { GetSubjectGroupDataProps } from './../../types/ClassList/GetSubjectGroupDataProps';
 import React, { useEffect } from 'react';
-import { Databasez } from '~/firebase';
+import Databasez from '~/firebase';
 import { ref, get } from 'firebase/database';
 
 const GetSubjectGroupData: React.FC<GetSubjectGroupDataProps> = ({
@@ -52,7 +52,7 @@ const GetSubjectGroupData: React.FC<GetSubjectGroupDataProps> = ({
         };
 
         fetchData();
-    }, []);
+    }, [setClasses, setArrGroupSubject, setGroupSubject, setSubject, setArrSubject]);
 
     return null;
 };

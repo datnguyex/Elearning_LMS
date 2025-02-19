@@ -48,6 +48,3 @@ postcss.config.js
 # Environment variables
 .env
 .env.*
-
-# Firebase config
-src/firebase.ts
