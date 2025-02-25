@@ -1,5 +1,5 @@
 import { DatePicker } from 'antd';
-import { CalendarOrange } from '~/assets/Icons/Icons';
+import { CalendarOrange } from 'src/assets/Icons/Icons';
 
 export function LessonInfomation() {
     return (

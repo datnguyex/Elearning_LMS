@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowWhite, ICircle } from '~/assets/Icons/Icons';
+import { ArrowWhite, ICircle } from 'src/assets/Icons/Icons';
 import { motion } from 'framer-motion';
 
 interface Subject {

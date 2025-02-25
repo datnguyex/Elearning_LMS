@@ -1,11 +1,11 @@
 import { useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { HandleTypeClassAction } from '~/redux/Action';
-import { EyeGrey, Paperplane, Search, Upaperclip } from '~/assets/Icons/Icons';
-import { TeacherImg } from '~/assets/images';
-import ChatList from '~/components/QuestionAndAnswer/ChatList';
-import TableChat from '~/components/QuestionAndAnswer/TableChat';
-import { StoreReducer } from '~/redux/Store';
+import { HandleTypeClassAction } from 'src/redux/Action';
+import { EyeGrey, Paperplane, Search, Upaperclip } from 'src/assets/Icons/Icons';
+import { TeacherImg } from 'src/assets/images';
+import ChatList from 'src/components/QuestionAndAnswer/ChatList';
+import TableChat from 'src/components/QuestionAndAnswer/TableChat';
+import { StoreReducer } from 'src/redux/Store';
 import { useSelector } from 'react-redux';
 
 function QuestionAndAnswer() {

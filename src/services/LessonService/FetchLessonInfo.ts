@@ -1,4 +1,4 @@
-import Lesson from '~/types/ClassInmation/Lesson';
+import Lesson from 'src/types/ClassInmation/Lesson';
 import Databasez from '../../firebase';
 import { ref, get } from 'firebase/database';
 

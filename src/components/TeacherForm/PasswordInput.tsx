@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { EyeWhite, SlashedEyeOrange } from '~/assets/Icons/Icons';
-import { AddClassContest } from '~/pages/ClassManage/AddClassSchedule/AddClassSchedule';
+import { EyeWhite, SlashedEyeOrange } from 'src/assets/Icons/Icons';
+import { AddClassContest } from 'src/pages/ClassManage/AddClassSchedule/AddClassSchedule';
 const PasswordInput: React.FC = () => {
     const { passwordValue, setPasswordValue, hiddenPassword, togglePasswordVisibility } = useContext(AddClassContest);
     const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {

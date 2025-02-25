@@ -13,12 +13,12 @@ import {
     ListPenWhite,
     QuestionCommentGrey,
     QuestionCommentWhite,
-} from '~/assets/Icons/Icons';
-import { ElearningLogoWhite } from '~/assets/images';
-import SidebarItem from '~/components/Sidebar/SidebarItem';
+} from 'src/assets/Icons/Icons';
+import { ElearningLogoWhite } from 'src/assets/images';
+import SidebarItem from 'src/components/Sidebar/SidebarItem';
 import { useLocation } from 'react-router-dom';
-import SidebarSection from '~/components/Sidebar/SidebarSection';
-import SidebarLink from '~/components/Sidebar/SidebarLink';
+import SidebarSection from 'src/components/Sidebar/SidebarSection';
+import SidebarLink from 'src/components/Sidebar/SidebarLink';
 
 function Sidebar() {
     //location hook

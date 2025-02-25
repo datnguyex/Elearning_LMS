@@ -1,5 +1,5 @@
 import React from 'react';
-import { CircleBackgroundOverview } from '~/assets/Icons/Icons';
+import { CircleBackgroundOverview } from 'src/assets/Icons/Icons';
 
 // Định nghĩa kiểu cho props
 interface CourseOverviewProps {

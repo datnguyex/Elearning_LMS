@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from 'react';
-import { AddClassContest } from '~/pages/ClassManage/AddClassSchedule/AddClassSchedule';
+import { AddClassContest } from 'src/pages/ClassManage/AddClassSchedule/AddClassSchedule';
 
 const LinkInput: React.FC = () => {
     const { linkValue, handleSetLinkValue, handleCopy, inputRef } = useContext(AddClassContest);

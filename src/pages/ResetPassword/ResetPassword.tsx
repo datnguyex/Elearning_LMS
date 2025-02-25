@@ -1,4 +1,4 @@
-import AuthLayout from '~/layouts/AuthLayout/AuthLayout';
+import AuthLayout from 'src/layouts/AuthLayout/AuthLayout';
 
 function ResetPassword() {
     return (

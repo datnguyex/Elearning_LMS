@@ -1,5 +1,5 @@
-import InputForm from '~/components/TeacherForm/InputForm';
-import TextAreaForm from '~/components/TeacherForm/TextAreaForm';
+import InputForm from 'src/components/TeacherForm/InputForm';
+import TextAreaForm from 'src/components/TeacherForm/TextAreaForm';
 
 function FormOne({ children }: any) {
     return (

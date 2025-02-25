@@ -1,6 +1,6 @@
 import { Checkbox } from 'antd';
-import LinkInput from '~/components/TeacherForm/LinkInput';
-import PasswordInput from '~/components/TeacherForm/PasswordInput';
+import LinkInput from 'src/components/TeacherForm/LinkInput';
+import PasswordInput from 'src/components/TeacherForm/PasswordInput';
 
 function FormThree() {
     return (

@@ -1,4 +1,4 @@
-import { UserCircleOrange } from '~/assets/Icons/Icons';
+import { UserCircleOrange } from 'src/assets/Icons/Icons';
 
 function PositionUserInfo() {
     return (

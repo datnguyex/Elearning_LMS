@@ -5,7 +5,7 @@ import {
     PencilBlurBackground,
     RectangularBlurBackground,
     SquareRulerBlurBackground,
-} from '~/assets/Icons/Icons';
+} from 'src/assets/Icons/Icons';
 
 function PositionBackgroundIcons() {
     return (

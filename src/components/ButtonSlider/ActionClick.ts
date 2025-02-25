@@ -1,4 +1,4 @@
-import { CustomClickProps } from '~/types/Slider/CustomClickProps';
+import { CustomClickProps } from 'src/types/Slider/CustomClickProps';
 
 export const onPrevClick = ({ sliderRef }: CustomClickProps) => {
     if (sliderRef.current) {

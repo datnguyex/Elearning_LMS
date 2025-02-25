@@ -1,4 +1,4 @@
-import { IconType } from '~/types/Icon/Icontype';
+import { IconType } from 'src/types/Icon/Icontype';
 
 export const EyeWhite: React.FC<IconType> = ({ width = '28px', height = '21px', color = 'white' }) => {
     return (

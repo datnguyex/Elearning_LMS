@@ -1,4 +1,4 @@
-import { UseToggleArrayProps } from '~/types/UseToggleArrayProps/UseToggleArrayProps';
+import { UseToggleArrayProps } from 'src/types/UseToggleArrayProps/UseToggleArrayProps';
 
 const UseToggleArray = ({ id, setState }: UseToggleArrayProps): void => {
     setState((prev) => {

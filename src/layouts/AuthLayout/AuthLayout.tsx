@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ElearningLogo, UserCircle, backgroundAuth, shield } from '~/assets/images';
-import AuthInput from '~/components/Auth/AuthInput';
-import { AuthLayoutProps } from '~/types/AuthLayoutProps/AuthLayoutProps';
+import { ElearningLogo, UserCircle, backgroundAuth, shield } from '../../assets/images/';
+import AuthInput from '../../components/Auth/AuthInput';
+import { AuthLayoutProps } from '../../../src/types/AuthLayoutProps/AuthLayoutProps';
 
-import { LoginService } from '~/services/AuthService/LoginService';
+import { LoginService } from 'src/services/AuthService/LoginService';
 
 function AuthLayout({ title, transfer, type }: AuthLayoutProps) {
     //navigate

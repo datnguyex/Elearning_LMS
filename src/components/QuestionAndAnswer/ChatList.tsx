@@ -1,5 +1,5 @@
-import { EyeGrey } from '~/assets/Icons/Icons';
-import { TeacherImg } from '~/assets/images';
+import { EyeGrey } from 'src/assets/Icons/Icons';
+import { TeacherImg } from 'src/assets/images';
 
 // Define the structure of a chat object
 

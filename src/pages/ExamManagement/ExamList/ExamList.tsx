@@ -1,4 +1,4 @@
-import Sidebar from '~/layouts/Sidebar/Sidebar';
+import Sidebar from 'src/layouts/Sidebar/Sidebar';
 
 function ExamList() {
     return (

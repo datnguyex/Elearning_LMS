@@ -2,7 +2,7 @@ import { ref, get } from 'firebase/database';
 import Databasez from '../../firebase';
 // hoặc các dịch vụ Firebase bạn sử dụng
 
-import FetchSubjectsServiceProps from '~/types/FetchSubjectServiceProps/FetchSubjectServiceProps';
+import FetchSubjectsServiceProps from 'src/types/FetchSubjectServiceProps/FetchSubjectServiceProps';
 
 const FetchSubjects = async ({ setSubjects }: FetchSubjectsServiceProps) => {
     try {

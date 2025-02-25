@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
-import CourseOverview from '~/components/Overview/CourseOverview';
-import Sidebar from '~/layouts/Sidebar/Sidebar';
+import CourseOverview from 'src/components/Overview/CourseOverview';
+import Sidebar from 'src/layouts/Sidebar/Sidebar';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, Title, Tooltip, Legend, ArcElement, ChartData } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import StatisticItem from '~/components/Overview/StatisticItem';
-import PositionUserInfo from '~/components/PositionUserInfo/PositionUserInfo';
-import PositionBackgroundIcons from '~/components/PositionBackgroundIcons/PositionBackgroundIcons';
-import SubjectCard from '~/components/Overview/SubjectCard';
-import UseToggleArray from '~/CustomHooks/UseToggleArray';
-import { CreateGradientColor } from '~/utils/CreateGradientColor';
-import FetchSubjects from '~/services/SubjectService/FetchSubjectsService';
-import TitlePage from '~/layouts/Tilte/Title';
+import StatisticItem from 'src/components/Overview/StatisticItem';
+import PositionUserInfo from 'src/components/PositionUserInfo/PositionUserInfo';
+import PositionBackgroundIcons from 'src/components/PositionBackgroundIcons/PositionBackgroundIcons';
+import SubjectCard from 'src/components/Overview/SubjectCard';
+import UseToggleArray from 'src/CustomHooks/UseToggleArray';
+import { CreateGradientColor } from 'src/utils/CreateGradientColor';
+import FetchSubjects from 'src/services/SubjectService/FetchSubjectsService';
+import TitlePage from 'src/layouts/Tilte/Title';
 
 ChartJS.register(Title, Tooltip, Legend, ArcElement, ChartDataLabels);
 

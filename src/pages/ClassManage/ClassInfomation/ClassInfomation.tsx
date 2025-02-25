@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { ArrowWhite, CalendarOrange, EditPenOrange, PlusCircle, XCircle } from '~/assets/Icons/Icons';
-import FormThree from '~/layouts/TeacherForm/FormThree';
+import { ArrowWhite, CalendarOrange, EditPenOrange, PlusCircle, XCircle } from 'src/assets/Icons/Icons';
+import FormThree from 'src/layouts/TeacherForm/FormThree';
 import './ClassInfomation.css';
-import DropdownSelector from '~/components/ClassList/DropdownSelector';
-import UseToggleArray from '~/CustomHooks/UseToggleArray';
-import GetTimeData from '~/utils/GetTimeData';
+import DropdownSelector from 'src/components/ClassList/DropdownSelector';
+import UseToggleArray from 'src/CustomHooks/UseToggleArray';
+import GetTimeData from 'src/utils/GetTimeData';
 import Slider from 'react-slick';
-import { onNextClick, onPrevClick } from '~/components/ButtonSlider/ActionClick';
-import { CustomArrowNextMenu, CustomArrowPrevMenu } from '~/components/ButtonSlider/CustomClick';
-import { FetchLessionInfo } from '~/services/LessonService/FetchLessonInfo';
-import Lesson from '~/types/ClassInmation/Lesson';
+import { onNextClick, onPrevClick } from 'src/components/ButtonSlider/ActionClick';
+import { CustomArrowNextMenu, CustomArrowPrevMenu } from 'src/components/ButtonSlider/CustomClick';
+import { FetchLessionInfo } from 'src/services/LessonService/FetchLessonInfo';
+import Lesson from 'src/types/ClassInmation/Lesson';
 
-import TeacherInfomation from '~/components/ClassInfomation/TeacherInfomation';
-import { LessonInfomation, LessonSubInfomation } from '~/components/ClassInfomation/LessonInfomation';
+import TeacherInfomation from 'src/components/ClassInfomation/TeacherInfomation';
+import { LessonInfomation, LessonSubInfomation } from 'src/components/ClassInfomation/LessonInfomation';
 import { Link } from 'react-router-dom';
 
 function ClassInfomation() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DoubleArrow, ICircle } from '~/assets/Icons/Icons';
-import { ClassesProps } from '~/types/ClassList/ClassesProp';
+import { DoubleArrow, ICircle } from 'src/assets/Icons/Icons';
+import { ClassesProps } from 'src/types/ClassList/ClassesProp';
 
 const Classes: React.FC<ClassesProps> = ({ classes, subject, typeClass, ElementQuantity }) => {
     const classEntries = Object.keys(classes).slice(0, ElementQuantity);

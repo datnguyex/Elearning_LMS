@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
-import { ArrowWhite, DoubleArrow, ICircle, Search } from '~/assets/Icons/Icons';
-import PositionBackgroundIcons from '~/components/PositionBackgroundIcons/PositionBackgroundIcons';
-import PositionUserInfo from '~/components/PositionUserInfo/PositionUserInfo';
-import Sidebar from '~/layouts/Sidebar/Sidebar';
+import { ArrowWhite, DoubleArrow, ICircle, Search } from 'src/assets/Icons/Icons';
+import PositionBackgroundIcons from 'src/components/PositionBackgroundIcons/PositionBackgroundIcons';
+import PositionUserInfo from 'src/components/PositionUserInfo/PositionUserInfo';
+import Sidebar from 'src/layouts/Sidebar/Sidebar';
 import { Pagination } from 'antd';
 import './ClassList.css';
-import UseToggleArray from '~/CustomHooks/UseToggleArray';
+import UseToggleArray from 'src/CustomHooks/UseToggleArray';
 
-import UsePreventTextAndMaxValue from '~/CustomHooks/UsePreventTextAndMaxValue';
-import ButtonTypeClass from '~/components/ClassList/ButtonTypeClass';
+import UsePreventTextAndMaxValue from 'src/CustomHooks/UsePreventTextAndMaxValue';
+import ButtonTypeClass from 'src/components/ClassList/ButtonTypeClass';
 
-import Classes from '~/components/ClassList/Classes';
-import DropdownSelector from '~/components/ClassList/DropdownSelector';
-import GetSubjectGroupData from '~/services/Classlist/getSubjectGroupData';
-import SetSubjectData from '~/services/Classlist/SetSubjectData';
-import SetGroupSubjectData from '~/services/Classlist/SetGroupSubjectData';
-import TitlePage from '~/layouts/Tilte/Title';
+import Classes from 'src/components/ClassList/Classes';
+import DropdownSelector from 'src/components/ClassList/DropdownSelector';
+import GetSubjectGroupData from 'src/services/Classlist/getSubjectGroupData';
+import SetSubjectData from 'src/services/Classlist/SetSubjectData';
+import SetGroupSubjectData from 'src/services/Classlist/SetGroupSubjectData';
+import TitlePage from 'src/layouts/Tilte/Title';
 function ClassList() {
     //quantity elements on table state
     const [ElementQuantity, setElementQuantity] = useState(6);

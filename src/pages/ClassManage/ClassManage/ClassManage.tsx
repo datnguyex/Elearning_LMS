@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
-import SelectableCard from '~/components/ClassInfomation/SelectableCard';
-import PositionBackgroundIcons from '~/components/PositionBackgroundIcons/PositionBackgroundIcons';
-import PositionUserInfo from '~/components/PositionUserInfo/PositionUserInfo';
-import Sidebar from '~/layouts/Sidebar/Sidebar';
-import TitlePage from '~/layouts/Tilte/Title';
+import SelectableCard from 'src/components/ClassInfomation/SelectableCard';
+import PositionBackgroundIcons from 'src/components/PositionBackgroundIcons/PositionBackgroundIcons';
+import PositionUserInfo from 'src/components/PositionUserInfo/PositionUserInfo';
+import Sidebar from 'src/layouts/Sidebar/Sidebar';
+import TitlePage from 'src/layouts/Tilte/Title';
 import ClassInfomation from '../ClassInfomation/ClassInfomation';
 import QuestionAndAnswer from '../QuestionAndAnswer/QuestionAndAnswer';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { HandleTypeClassAction } from '~/redux/Action';
-import { StoreReducer } from '~/redux/Store';
+import { HandleTypeClassAction } from 'src/redux/Action';
+import { StoreReducer } from 'src/redux/Store';
 
 function ClassMange() {
     //use dispatch hook

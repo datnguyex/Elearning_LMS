@@ -1,20 +1,20 @@
 import { createContext, useRef, useState } from 'react';
-import { CalendarOrange } from '~/assets/Icons/Icons';
-import DropdownSelector from '~/components/ClassList/DropdownSelector';
-import PositionBackgroundIcons from '~/components/PositionBackgroundIcons/PositionBackgroundIcons';
-import PositionUserInfo from '~/components/PositionUserInfo/PositionUserInfo';
-import UseToggleArray from '~/CustomHooks/UseToggleArray';
-import Sidebar from '~/layouts/Sidebar/Sidebar';
+import { CalendarOrange } from 'src/assets/Icons/Icons';
+import DropdownSelector from 'src/components/ClassList/DropdownSelector';
+import PositionBackgroundIcons from 'src/components/PositionBackgroundIcons/PositionBackgroundIcons';
+import PositionUserInfo from 'src/components/PositionUserInfo/PositionUserInfo';
+import UseToggleArray from 'src/CustomHooks/UseToggleArray';
+import Sidebar from 'src/layouts/Sidebar/Sidebar';
 import './AddClassSchedule.css';
 import { DatePicker } from 'antd';
-import GetTimeData from '~/utils/GetTimeData';
-import FetchAssistantInfo from '~/services/AssistantService/FetchAssistantInfo';
-import { CopyLink } from '~/utils/CopyLink';
-import ActionButton from '~/components/Button/ActionButton';
-import FormThree from '~/layouts/TeacherForm/FormThree';
-import FormOne from '~/layouts/TeacherForm/FormOne';
-import AddClassContestType from '~/types/ClassList/AddClassContest';
-import TitlePage from '~/layouts/Tilte/Title';
+import GetTimeData from 'src/utils/GetTimeData';
+import FetchAssistantInfo from 'src/services/AssistantService/FetchAssistantInfo';
+import { CopyLink } from 'src/utils/CopyLink';
+import ActionButton from 'src/components/Button/ActionButton';
+import FormThree from 'src/layouts/TeacherForm/FormThree';
+import FormOne from 'src/layouts/TeacherForm/FormOne';
+import AddClassContestType from 'src/types/ClassList/AddClassContest';
+import TitlePage from 'src/layouts/Tilte/Title';
 
 //contest AddClass
 export const AddClassContest = createContext<AddClassContestType>({

@@ -1,4 +1,4 @@
-import { AuthInputProps } from '~/types/AuthLayoutProps/AuthLayoutProps';
+import { AuthInputProps } from 'src/types/AuthLayoutProps/AuthLayoutProps';
 
 function AuthInput({ label, labelValue, handleChangeValue, type, imgIcon }: AuthInputProps) {
     return (

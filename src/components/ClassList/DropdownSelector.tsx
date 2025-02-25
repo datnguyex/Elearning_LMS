@@ -1,4 +1,4 @@
-import { ArrowWhite } from '~/assets/Icons/Icons';
+import { ArrowWhite } from 'src/assets/Icons/Icons';
 import { motion } from 'framer-motion';
 
 interface DropdownSelectorProps {

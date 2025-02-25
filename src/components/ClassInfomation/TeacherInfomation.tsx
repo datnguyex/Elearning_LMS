@@ -1,4 +1,4 @@
-import { TeacherImg } from '~/assets/images';
+import { TeacherImg } from 'src/assets/images';
 
 function TeacherInfomation() {
     return (
