@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Elearning_LMS/static/css/main.16194d7d.css",
-    "main.js": "/Elearning_LMS/static/js/main.74f8dda6.js",
+    "main.css": "/Elearning_LMS/static/css/main.63d0eee7.css",
+    "main.js": "/Elearning_LMS/static/js/main.03921526.js",
     "static/js/453.da8d1fcc.chunk.js": "/Elearning_LMS/static/js/453.da8d1fcc.chunk.js",
     "static/media/SourceSansPro-ExtraLightItalic.ttf": "/Elearning_LMS/static/media/SourceSansPro-ExtraLightItalic.fc1184c14b56a1e6a17a.ttf",
     "static/media/SourceSansPro-ExtraLight.ttf": "/Elearning_LMS/static/media/SourceSansPro-ExtraLight.57c42ad75a79508f1694.ttf",
@@ -26,12 +26,12 @@
     "static/media/slick.ttf": "/Elearning_LMS/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Elearning_LMS/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Elearning_LMS/index.html",
-    "main.16194d7d.css.map": "/Elearning_LMS/static/css/main.16194d7d.css.map",
-    "main.74f8dda6.js.map": "/Elearning_LMS/static/js/main.74f8dda6.js.map",
+    "main.63d0eee7.css.map": "/Elearning_LMS/static/css/main.63d0eee7.css.map",
+    "main.03921526.js.map": "/Elearning_LMS/static/js/main.03921526.js.map",
     "453.da8d1fcc.chunk.js.map": "/Elearning_LMS/static/js/453.da8d1fcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16194d7d.css",
-    "static/js/main.74f8dda6.js"
+    "static/css/main.63d0eee7.css",
+    "static/js/main.03921526.js"
   ]
 }
