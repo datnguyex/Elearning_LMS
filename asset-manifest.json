@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Elearning_LMS/static/css/main.63d0eee7.css",
+    "main.js": "/Elearning_LMS/static/js/main.03921526.js",
+    "static/js/453.da8d1fcc.chunk.js": "/Elearning_LMS/static/js/453.da8d1fcc.chunk.js",
+    "static/media/SourceSansPro-ExtraLightItalic.ttf": "/Elearning_LMS/static/media/SourceSansPro-ExtraLightItalic.fc1184c14b56a1e6a17a.ttf",
+    "static/media/SourceSansPro-ExtraLight.ttf": "/Elearning_LMS/static/media/SourceSansPro-ExtraLight.57c42ad75a79508f1694.ttf",
+    "static/media/SourceSansPro-Regular.ttf": "/Elearning_LMS/static/media/SourceSansPro-Regular.358e8828cd2fc97c7e74.ttf",
+    "static/media/SourceSansPro-SemiboldItalic.ttf": "/Elearning_LMS/static/media/SourceSansPro-SemiboldItalic.834f6982e60dbda565a3.ttf",
+    "static/media/SourceSansPro-Semibold.ttf": "/Elearning_LMS/static/media/SourceSansPro-Semibold.65e949bf8ce97ff997cf.ttf",
+    "static/media/SourceSansPro-BoldItalic.ttf": "/Elearning_LMS/static/media/SourceSansPro-BoldItalic.dcd85a6a8af28417789b.ttf",
+    "static/media/SourceSansPro-Bold.ttf": "/Elearning_LMS/static/media/SourceSansPro-Bold.8a1dab6b26e68026997d.ttf",
+    "static/media/SourceSansPro-BlackItalic.ttf": "/Elearning_LMS/static/media/SourceSansPro-BlackItalic.d30db1fc6405361d19d0.ttf",
+    "static/media/SourceSansPro-Black.ttf": "/Elearning_LMS/static/media/SourceSansPro-Black.f4dfcc1826146b2e4212.ttf",
+    "static/media/Mulish-BoldItalic.ttf": "/Elearning_LMS/static/media/Mulish-BoldItalic.d98f5d219adbc963e431.ttf",
+    "static/media/Mulish-ExtraBoldItalic.ttf": "/Elearning_LMS/static/media/Mulish-ExtraBoldItalic.87406ab8e1ab6d83bbe2.ttf",
+    "static/media/Mulish-BlackItalic.ttf": "/Elearning_LMS/static/media/Mulish-BlackItalic.4bfbc135d7ffdb763647.ttf",
+    "static/media/Mulish-SemiBoldItalic.ttf": "/Elearning_LMS/static/media/Mulish-SemiBoldItalic.e8c83a073907c1be5857.ttf",
+    "static/media/Mulish-Black.ttf": "/Elearning_LMS/static/media/Mulish-Black.1c7e28eec1581d8fbe41.ttf",
+    "static/media/Mulish-Bold.ttf": "/Elearning_LMS/static/media/Mulish-Bold.6cb68186a91bb3fcb0b7.ttf",
+    "static/media/Mulish-ExtraBold.ttf": "/Elearning_LMS/static/media/Mulish-ExtraBold.06b5157c67b69344b4be.ttf",
+    "static/media/Mulish-Regular.ttf": "/Elearning_LMS/static/media/Mulish-Regular.d3d302e1573fb1c8db5b.ttf",
+    "static/media/Mulish-SemiBold.ttf": "/Elearning_LMS/static/media/Mulish-SemiBold.6bf3074a2efb3178fd2b.ttf",
+    "static/media/slick.svg": "/Elearning_LMS/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Elearning_LMS/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Elearning_LMS/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Elearning_LMS/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Elearning_LMS/index.html",
+    "main.63d0eee7.css.map": "/Elearning_LMS/static/css/main.63d0eee7.css.map",
+    "main.03921526.js.map": "/Elearning_LMS/static/js/main.03921526.js.map",
+    "453.da8d1fcc.chunk.js.map": "/Elearning_LMS/static/js/453.da8d1fcc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63d0eee7.css",
+    "static/js/main.03921526.js"
+  ]
+}
