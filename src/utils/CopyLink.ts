@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface CopyLinkProps {
-    ref: React.RefObject<HTMLInputElement>;
+    ref: any;
 }
 
 export const CopyLink = ({ ref }: CopyLinkProps) => {
