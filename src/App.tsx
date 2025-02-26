@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import Overview from './pages/Overview/Overview';
@@ -15,7 +16,7 @@ import AddExam from './pages/ExamManagement/AddExam/AddExam';
 
 export default function App() {
     return (
-        <Router basename="/Elearning_LMS">
+        <Router>
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
