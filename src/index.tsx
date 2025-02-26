@@ -6,16 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/GlobalStyles';
 import { Provider } from 'react-redux';
 import { StoreReducer } from './redux/Store';
+import { HashRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-    // <React.StrictMode>
-
-    // </React.StrictMode>
-    // <Provider store={StoreReducer}>
-    //     <GlobalStyles>
-    <App />,
-    //     </GlobalStyles>
-    // </Provider>,
+    <HashRouter>
+        <App />
+    </HashRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
