@@ -14,10 +14,11 @@ import AddExam from './pages/ExamManagement/AddExam/AddExam';
 import Sidebar from './layouts/Sidebar/Sidebar';
 
 import { HashRouter, Routes, Route } from 'react-router-dom';
+
 export default function App() {
     return (
         <>
-            <HashRouter basename="/">
+            <HashRouter basename="https://datnguyex.github.io/Elearning_LMS/">
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path="/reset-password" element={<ResetPassword />} />
