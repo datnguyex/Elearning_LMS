@@ -108,7 +108,7 @@ function Sidebar() {
                 initial={{ x: '-100%' }}
                 animate={{ x: isSidebarOpen ? '0%' : '-150%' }}
                 transition={{ type: 'spring', stiffness: 50 }}
-                className="absolute bg-[#fff] h-[100vh] w-[15%] shadow-ChildrentSidebar left-[6%] top-0 overflow-hidden z-[11]"
+                className="fixed bg-[#fff] h-[100vh] w-[15%] shadow-ChildrentSidebar left-[6%] top-0 bottom-0 overflow-hidden z-[11]"
             >
                 <div className="mt-[18vh] translate-x-[12%] inline-block">
                     <SidebarSection

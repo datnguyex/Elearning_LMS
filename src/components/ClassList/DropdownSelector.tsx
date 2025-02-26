@@ -15,6 +15,7 @@ interface DropdownSelectorProps {
     height?: string;
     borderNone?: boolean;
     borderColor?: string;
+    type?: string;
 }
 
 const DropdownSelector: React.FC<DropdownSelectorProps> = ({
@@ -32,6 +33,7 @@ const DropdownSelector: React.FC<DropdownSelectorProps> = ({
     borderNone = false,
     borderColor = '#373839',
     // border-[#C9C4C0]
+    type = '',
 }) => {
     return (
         <div className="flex flex-col justify-center gap-2 w-full ">

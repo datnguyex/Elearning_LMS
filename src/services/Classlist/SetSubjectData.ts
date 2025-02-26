@@ -15,13 +15,14 @@ interface SubjectGroups {
 }
 
 interface SetSubjectDataProps {
-    e: string;
-    setSubject: (subjectName: string) => void;
-    setClasses: (classes: string[]) => void;
+    e?: string;
+    setSubject?: (subjectName: string) => void;
+    setClasses?: (classes: string[]) => void;
 }
 
 const SetSubjectData = async ({ e, setSubject, setClasses }: SetSubjectDataProps) => {
     const subjectGroupRef = ref(Databasez, 'Elearning/SubjectGroup');
+
     try {
         // Fetch data from Firebase
         const snapshot = await get(subjectGroupRef);
@@ -39,9 +40,14 @@ const SetSubjectData = async ({ e, setSubject, setClasses }: SetSubjectDataProps
                             const subjectName = subject.name;
 
                             // Compare subject name with e
-                            if (subjectName === e) {
-                                setSubject(subjectName);
-                                setClasses(subject.classes);
+
+                            if (subjectName == e) {
+                                if (setSubject) {
+                                    setSubject(subjectName);
+                                }
+                                if (setClasses) {
+                                    setClasses(subject.classes);
+                                }
                             }
                         }
                     }

@@ -11,7 +11,6 @@ const GetSubjectGroupData: React.FC<GetSubjectGroupDataProps> = ({
     setArrSubject,
 }) => {
     useEffect(() => {
-        // Declare an async function inside useEffect
         const fetchData = async () => {
             const subjectGroupRef = ref(Databasez, 'Elearning/SubjectGroup');
             try {
@@ -23,26 +22,35 @@ const GetSubjectGroupData: React.FC<GetSubjectGroupDataProps> = ({
                     const groupNames = Object.keys(subjectGroupData).map((groupKey) => {
                         return subjectGroupData[groupKey].name;
                     });
-                    setClasses(subjectGroupData.SubjectGroup1.Subject.Subject3.classes);
+                    if (setClasses) {
+                        setClasses(subjectGroupData.SubjectGroup1.Subject.Subject3.classes);
+                    }
                     const total = Object.keys(subjectGroupData.SubjectGroup1.Subject.Subject3.classes).length;
+                    if (setArrGroupSubject) {
+                        setArrGroupSubject(groupNames);
+                    }
+                    if (setGroupSubject) {
+                        setGroupSubject(
+                            subjectGroupData.SubjectGroup1.level +
+                                ' ' +
+                                '-' +
+                                ' ' +
+                                subjectGroupData.SubjectGroup1.name,
+                        );
+                    }
+                    if (setSubject) {
+                        setSubject(subjectGroupData.SubjectGroup1.Subject.Subject3.name);
+                    }
 
-                    setArrGroupSubject(groupNames);
-
-                    setGroupSubject(
-                        subjectGroupData.SubjectGroup1.level + ' ' + '-' + ' ' + subjectGroupData.SubjectGroup1.name,
-                    );
-
-                    setSubject(subjectGroupData.SubjectGroup1.Subject.Subject3.name);
-
-                    // Chỉ lấy tên các môn học từ SubjectGroup1
                     const subjects: string[] = [
                         subjectGroupData.SubjectGroup1.Subject.Subject1.name,
                         subjectGroupData.SubjectGroup1.Subject.Subject2.name,
                         subjectGroupData.SubjectGroup1.Subject.Subject3.name,
                     ];
 
-                    // Cập nhật state arrSubject với các tên môn học
-                    setArrSubject(subjects);
+                    if (setArrSubject) {
+                        setArrSubject(subjects);
+                    }
                 } else {
                     console.log('Không có dữ liệu trong SubjectGroup');
                 }

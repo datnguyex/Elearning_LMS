@@ -1,0 +1,67 @@
+.exameList-pagination .ant-select-selector {
+    display: none;
+}
+.exameList-pagination .ant-pagination-options {
+    display: none;
+}
+.exameList-pagination .ant-pagination-item {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+.exameList-pagination .ant-pagination-item a {
+    padding: 0;
+    color: #373839;
+}
+.exameList-pagination .ant-pagination-item {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+.exameList-pagination .ant-pagination-item:hover {
+    background-color: transparent !important;
+}
+
+.exameList-pagination .ant-pagination-item-active {
+    border-radius: 50%;
+    background-color: #ff7506;
+    border-color: #ff7506;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    min-width: 20px !important;
+}
+.exameList-pagination .ant-pagination-item-active:hover {
+    background-color: #ff7506 !important;
+    border-color: #ff7506 !important;
+}
+.exameList-pagination .ant-pagination-item-active:hover a {
+    color: white !important;
+}
+.exameList-pagination .ant-pagination-item-active a {
+    color: #fff !important;
+}
+.exameList-pagination .ant-pagination-prev {
+    margin: 0;
+    min-width: 20px !important;
+}
+.exameList-pagination .ant-pagination-next {
+    margin: 0;
+    min-width: 20px !important;
+}
+.exam-list-pagination .ant-picker {
+    border-radius: 3px !important;
+    font-size: 10px !important;
+    border-color: black !important;
+}
+.exam-list-pagination .ant-picker .ant-picker-input input {
+    font-size: 11px !important;
+}

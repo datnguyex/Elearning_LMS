@@ -8,7 +8,6 @@ import './ClassList.css';
 import UseToggleArray from 'src/CustomHooks/UseToggleArray';
 
 import UsePreventTextAndMaxValue from 'src/CustomHooks/UsePreventTextAndMaxValue';
-import ButtonTypeClass from 'src/components/ClassList/ButtonTypeClass';
 
 import Classes from 'src/components/ClassList/Classes';
 import DropdownSelector from 'src/components/ClassList/DropdownSelector';
@@ -16,6 +15,8 @@ import GetSubjectGroupData from 'src/services/Classlist/getSubjectGroupData';
 import SetSubjectData from 'src/services/Classlist/SetSubjectData';
 import SetGroupSubjectData from 'src/services/Classlist/SetGroupSubjectData';
 import TitlePage from 'src/layouts/Tilte/Title';
+import { headersTable } from 'src/assets/Arrays/Classlist/Classlist';
+import ButtonTypeHeader from 'src/components/Button/ButtonTypeHeader';
 function ClassList() {
     //quantity elements on table state
     const [ElementQuantity, setElementQuantity] = useState(6);
@@ -29,7 +30,7 @@ function ClassList() {
     const [openOption, setOpenOption] = useState<number[]>([]);
 
     //type class state
-    const [typeClass, setTypeClass] = useState(1);
+    const [typeClass, setTypeClass] = useState<number>(1);
 
     // group subject state
     const [groupSubject, setGroupSubject] = useState('THCS - Tổ văn sử địa');
@@ -54,7 +55,7 @@ function ClassList() {
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
     };
-    console.log('currentPage', currentPage);
+
     //opent options handle
     const handleOpenOpention = (e: number) => {
         UseToggleArray({ id: e, setState: setOpenOption });
@@ -117,16 +118,16 @@ function ClassList() {
                         {/* //title */}
                         <TitlePage> Quản lý lớp học</TitlePage>
                         <div className="flex items-center gap-3 w-full h-[8%]  mt-6 ml-[0px]">
-                            <ButtonTypeClass
+                            <ButtonTypeHeader
                                 value={1}
-                                currentTypeClass={typeClass}
-                                handleTypeClass={handleTypeClass}
+                                currentType={typeClass}
+                                handleType={handleTypeClass}
                                 label="Lớp học sắp tới"
                             />
-                            <ButtonTypeClass
+                            <ButtonTypeHeader
                                 value={2}
-                                currentTypeClass={typeClass}
-                                handleTypeClass={handleTypeClass}
+                                currentType={typeClass}
+                                handleType={handleTypeClass}
                                 label="Lớp học đã qua"
                             />
                         </div>
@@ -166,10 +167,13 @@ function ClassList() {
                                 </div>
                                 {/* 16.6 */}
                                 <Classes
+                                    type={'classList'}
+                                    Listicon={[<ICircle />]}
                                     classes={currentClasses}
                                     subject={subject}
                                     typeClass={typeClass}
                                     ElementQuantity={ElementQuantity}
+                                    headerTable={headersTable(typeClass, <DoubleArrow />)}
                                 />
                                 {/* //quantiy items */}
                                 <div className="flex gap-2 items-center absolute bottom-3">

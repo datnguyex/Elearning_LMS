@@ -2,7 +2,7 @@
     "name": "learnbasic",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://datnguyex.github.io/Elearning_LMS",
+    "homepage": "https://datnguyex.github.io/Elearning_LMS/",
     "dependencies": {
         "@reduxjs/toolkit": "^2.4.0",
         "@testing-library/jest-dom": "^5.17.0",

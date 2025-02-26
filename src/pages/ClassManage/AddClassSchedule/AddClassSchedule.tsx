@@ -15,6 +15,7 @@ import FormThree from 'src/layouts/TeacherForm/FormThree';
 import FormOne from 'src/layouts/TeacherForm/FormOne';
 import AddClassContestType from 'src/types/ClassList/AddClassContest';
 import TitlePage from 'src/layouts/Tilte/Title';
+import FormTwo from 'src/layouts/TeacherForm/FormTwo';
 
 //contest AddClass
 export const AddClassContest = createContext<AddClassContestType>({
@@ -62,6 +63,7 @@ function AddClassSchedule() {
 
     //minute end choosen state
     const [timeEndChoosen, setTimeEndChoosen] = useState<string>('00:00');
+
     //push id options to openOption state function
     const handleDisplayDropdown = (id: number) => {
         UseToggleArray({ id: id, setState: setOpenOption });
@@ -144,126 +146,45 @@ function AddClassSchedule() {
                                 </FormOne>
                             </div>
                             {/* group2 */}
-                            <div className="w-full py-5  bg-[#f0f3f6]">
-                                <div className="w-[45%] ml-[17%] h-full flex flex-col gap-5">
-                                    {/* duration */}
-                                    <div className="w-full flex justify-start items-center">
-                                        <div className="text-[#373839] text-base font-bold w-[20%] font-sourceSansPro tracking-tight">
-                                            Thời lượng
-                                        </div>
-                                        <div className="w-[60%] flex items-center relative z-[10]">
-                                            {/* //item1 */}
-                                            <div className="w-[50%] flex items-center justify-between gap-2">
-                                                <div className="w-[65%] flex justify-center items-center h-full">
-                                                    <DropdownSelector
-                                                        borderColor="#C9C4C0"
-                                                        onSelectOption={handleChoosenHour}
-                                                        onToggleOption={handleDisplayDropdown}
-                                                        options={arrayHours}
-                                                        openOption={openOption}
-                                                        id={2}
-                                                        value={hourChoosen}
-                                                    />
-                                                </div>
-                                                <div className="text-[#373839] flex-1 flex items-center justify-start text-base font-normal font-['Source Sans Pro'] leading-tight">
-                                                    Giờ
-                                                </div>
-                                            </div>
-                                            {/* //item2 */}
-                                            <div className="w-[50%] flex items-center justify-between gap-2">
-                                                <div className="w-[65%] flex justify-center items-center h-full">
-                                                    <DropdownSelector
-                                                        borderColor="#C9C4C0"
-                                                        onSelectOption={handleChoosenMinute}
-                                                        onToggleOption={handleDisplayDropdown}
-                                                        options={arrayMinute}
-                                                        openOption={openOption}
-                                                        id={3}
-                                                        value={minuteChoosen}
-                                                    />
-                                                </div>
-                                                <div className="text-[#373839] flex-1 flex items-center justify-start text-base font-normal font-['Source Sans Pro'] leading-tight">
-                                                    Phút
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* date start */}
-                                    <div className="w-full flex justify-start items-center">
-                                        <div className="text-[#373839] text-base font-bold w-[20%] font-sourceSansPro tracking-tight">
-                                            Ngày bắt đầu
-                                        </div>
-
-                                        <div className="w-[60%] flex items-center relative z-[9]">
-                                            {/* //item1 */}
-                                            <div className="w-[50%] flex items-center justify-between gap-2 ">
-                                                <div className="w-[87%] flex  items-center h-full">
-                                                    <div className="datePicker-addClassSchedule">
-                                                        <DatePicker
-                                                            placement="bottomLeft"
-                                                            format="DD/MM/YYYY"
-                                                            size="small"
-                                                            placeholder="DD/MM/YYYY"
-                                                            suffixIcon={<CalendarOrange />} // Custom icon
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* //item2 */}
-                                            <div className="w-[50%] flex items-center justify-between gap-2">
-                                                <div className="w-[65%] flex justify-center items-center h-full">
-                                                    <DropdownSelector
-                                                        borderColor="#C9C4C0"
-                                                        onSelectOption={handleTimeStartChoosen}
-                                                        onToggleOption={handleDisplayDropdown}
-                                                        options={times}
-                                                        openOption={openOption}
-                                                        id={5}
-                                                        value={timeStartChoosen}
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* date end */}
-                                    <div className="w-full flex justify-start items-center">
-                                        <div className="text-[#373839] text-base font-bold w-[20%] font-sourceSansPro tracking-tight">
-                                            Ngày kết thúc
-                                        </div>
-
-                                        <div className="w-[60%] flex items-center relative z-[8]">
-                                            {/* //item1 */}
-                                            <div className="w-[50%] flex items-center justify-between gap-2 ">
-                                                <div className="w-[87%] flex justify-start items-center h-full">
-                                                    <div className="datePicker-addClassSchedule">
-                                                        <DatePicker
-                                                            format="DD/MM/YYYY"
-                                                            size="small"
-                                                            placeholder="DD/MM/YYYY"
-                                                            suffixIcon={<CalendarOrange color={'#C9C4C0'} />}
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* //item2 */}
-                                            <div className="w-[50%] flex items-center justify-between gap-2">
-                                                <div className="w-[65%] flex justify-center items-center h-full">
-                                                    <DropdownSelector
-                                                        borderColor="#C9C4C0"
-                                                        color="#c8c4c0"
-                                                        onSelectOption={handleTimeEndChoosen}
-                                                        onToggleOption={handleDisplayDropdown}
-                                                        options={times}
-                                                        openOption={openOption}
-                                                        id={7}
-                                                        value={timeEndChoosen}
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <FormTwo>
+                                <DropdownSelector
+                                    borderColor="#C9C4C0"
+                                    onSelectOption={handleChoosenHour}
+                                    onToggleOption={handleDisplayDropdown}
+                                    options={arrayHours}
+                                    openOption={openOption}
+                                    id={2}
+                                    value={hourChoosen}
+                                />
+                                <DropdownSelector
+                                    borderColor="#C9C4C0"
+                                    onSelectOption={handleChoosenMinute}
+                                    onToggleOption={handleDisplayDropdown}
+                                    options={arrayMinute}
+                                    openOption={openOption}
+                                    id={3}
+                                    value={minuteChoosen}
+                                />
+                                <DropdownSelector
+                                    borderColor="#C9C4C0"
+                                    onSelectOption={handleTimeStartChoosen}
+                                    onToggleOption={handleDisplayDropdown}
+                                    options={times}
+                                    openOption={openOption}
+                                    id={5}
+                                    value={timeStartChoosen}
+                                />
+                                <DropdownSelector
+                                    borderColor="#C9C4C0"
+                                    color="#c8c4c0"
+                                    onSelectOption={handleTimeEndChoosen}
+                                    onToggleOption={handleDisplayDropdown}
+                                    options={times}
+                                    openOption={openOption}
+                                    id={7}
+                                    value={timeEndChoosen}
+                                />
+                            </FormTwo>
                             {/* group3 */}
                             <div className="w-full py-5 ">
                                 <div className="w-[45%] ml-[17%] h-full flex flex-col gap-5">
@@ -285,9 +206,9 @@ function AddClassSchedule() {
                             </div>
                         </div>
                         {/* //btns */}
-                        <div className="flex items-center absolute bottom-[20px] left-[50%] translate-x-[-50%] rounded w-[17%] gap-5">
-                            <ActionButton content="Hủy" bgColor="bg-[#F2F2F2]" textColor="#373839" />
-                            <ActionButton content="Lưu" bgColor="bg-[#FF7506]" textColor="white" />
+                        <div className="flex items-center absolute bottom-[10px] left-[50%] translate-x-[-50%] rounded w-[17%] gap-5">
+                            <ActionButton content="Hủy" bgColor="#F2F2F2" textColor="#373839" />
+                            <ActionButton content="Lưu" bgColor="#FF7506" textColor="white" />
                         </div>
                     </div>
                 </div>
