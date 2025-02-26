@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import Overview from './pages/Overview/Overview';
@@ -15,7 +15,7 @@ import AddExam from './pages/ExamManagement/AddExam/AddExam';
 
 export default function App() {
     return (
-        <Router basename="https://datnguyex.github.io/Elearning_LMS/">
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
@@ -31,6 +31,6 @@ export default function App() {
                 <Route path="/class-manage" element={<ClassMange />} />
                 <Route path="/add-exam" element={<AddExam />} />
             </Routes>
-        </Router>
+        </HashRouter>
     );
 }
