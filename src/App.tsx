@@ -1,4 +1,3 @@
-import { Routes, Route, HashRouter } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import Overview from './pages/Overview/Overview';
@@ -14,25 +13,27 @@ import ClassMange from './pages/ClassManage/ClassManage/ClassManage';
 import AddExam from './pages/ExamManagement/AddExam/AddExam';
 import Sidebar from './layouts/Sidebar/Sidebar';
 
+import { HashRouter, Routes, Route } from 'react-router-dom';
 export default function App() {
     return (
-        <HashRouter>
-            <Sidebar />
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/reset-password" element={<ResetPassword />} />
-                <Route path="/overview" element={<Overview />} />
-                <Route path="/class-list" element={<ClassList />} />
-                <Route path="/add-class-schedule" element={<AddClassSchedule />} />
-                <Route path="/exam-list" element={<ExamList />} />
-                <Route path="/grade-table" element={<GradeTable />} />
-                <Route path="/score-input" element={<ScoreInput />} />
-                <Route path="/exam-schedule" element={<ExamSchedule />} />
-                <Route path="/notifications" element={<Notifications />} />
-                <Route path="/help" element={<Help />} />
-                <Route path="/class-manage" element={<ClassMange />} />
-                <Route path="/add-exam" element={<AddExam />} />
-            </Routes>
-        </HashRouter>
+        <>
+            <HashRouter basename="/">
+                <Routes>
+                    <Route path="/" element={<Login />} />
+                    <Route path="/reset-password" element={<ResetPassword />} />
+                    <Route path="/overview" element={<Overview />} />
+                    <Route path="/class-list" element={<ClassList />} />
+                    <Route path="/add-class-schedule" element={<AddClassSchedule />} />
+                    <Route path="/exam-list" element={<ExamList />} />
+                    <Route path="/grade-table" element={<GradeTable />} />
+                    <Route path="/score-input" element={<ScoreInput />} />
+                    <Route path="/exam-schedule" element={<ExamSchedule />} />
+                    <Route path="/notifications" element={<Notifications />} />
+                    <Route path="/help" element={<Help />} />
+                    <Route path="/class-manage" element={<ClassMange />} />
+                    <Route path="/add-exam" element={<AddExam />} />
+                </Routes>
+            </HashRouter>
+        </>
     );
 }
