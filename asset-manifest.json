@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Elearning_LMS/static/css/main.b859c34f.css",
-    "main.js": "/Elearning_LMS/static/js/main.4162dc7c.js",
+    "main.js": "/Elearning_LMS/static/js/main.2a94d865.js",
     "static/js/453.da8d1fcc.chunk.js": "/Elearning_LMS/static/js/453.da8d1fcc.chunk.js",
     "static/media/SourceSansPro-ExtraLightItalic.ttf": "/Elearning_LMS/static/media/SourceSansPro-ExtraLightItalic.fc1184c14b56a1e6a17a.ttf",
     "static/media/SourceSansPro-ExtraLight.ttf": "/Elearning_LMS/static/media/SourceSansPro-ExtraLight.57c42ad75a79508f1694.ttf",
@@ -27,11 +27,11 @@
     "static/media/slick.woff": "/Elearning_LMS/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Elearning_LMS/index.html",
     "main.b859c34f.css.map": "/Elearning_LMS/static/css/main.b859c34f.css.map",
-    "main.4162dc7c.js.map": "/Elearning_LMS/static/js/main.4162dc7c.js.map",
+    "main.2a94d865.js.map": "/Elearning_LMS/static/js/main.2a94d865.js.map",
     "453.da8d1fcc.chunk.js.map": "/Elearning_LMS/static/js/453.da8d1fcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b859c34f.css",
-    "static/js/main.4162dc7c.js"
+    "static/js/main.2a94d865.js"
   ]
 }
