@@ -12,10 +12,12 @@ import ClassList from './pages/ClassManage/ClassList/ClassList';
 import AddClassSchedule from './pages/ClassManage/AddClassSchedule/AddClassSchedule';
 import ClassMange from './pages/ClassManage/ClassManage/ClassManage';
 import AddExam from './pages/ExamManagement/AddExam/AddExam';
+import Sidebar from './layouts/Sidebar/Sidebar';
 
 export default function App() {
     return (
         <HashRouter>
+            <Sidebar />
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
